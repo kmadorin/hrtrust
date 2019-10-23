@@ -1,0 +1,29 @@
+@startuml
+actor "External Contractor" as a_ex_employee
+actor "Project Manager" as a_company_pm
+actor "IT" as a_company_it
+actor "Customer" as a_customer
+
+a_customer -> a_company_pm: Order a new project
+a_company_pm -> a_ex_employee: We need support
+
+group Onboarding Software X
+    a_ex_employee -> a_company_pm: I don't have access to the Dashboard
+    a_company_pm -> a_company_it: Please give access
+    a_company_it -> a_company_pm: Okay
+    a_company_pm -> a_ex_employee: Okay
+end
+
+group Onboarding Software Y
+    a_ex_employee -> a_company_pm: I don't have access to Y
+end
+
+group Onboarding Software ..
+    a_ex_employee -> a_company_pm: I don't have access to ..
+end
+
+group Onboarding Software Z
+    a_ex_employee -> a_company_pm: I don't have access to Z
+end
+
+@enduml

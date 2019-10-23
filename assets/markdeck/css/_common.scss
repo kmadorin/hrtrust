@@ -1,0 +1,44 @@
+// FIXME this is just the remainder of what has been moved into markdeck.scss
+// for revealjs but not yet for impressjs.
+@import "commoncommon";
+
+.light-on-dark, section.light-on-dark h1 {
+    color: #fff;
+    text-shadow: 0px 1px #000;
+}
+
+.ltr, .inline {
+    p, pre {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Inconsolata-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "EB Garamond Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/EBGaramond-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "xkcd Script";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/xkcd-script.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Raleway-Regular.ttf") format('truetype');
+}
